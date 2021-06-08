@@ -49,6 +49,20 @@
           <mat-header-cell *matHeaderCellDef>Suite</mat-header-cell>
           <mat-cell *matCellDef="let element">{{ element.address.suite }}</mat-cell>
         </ng-container>
+
+        <!-- Functions Column -->
+        <ng-container matColumnDef="functions">
+          <mat-header-cell *matHeaderCellDef>Functions</mat-header-cell>
+          <mat-cell *matCellDef="let element">
+            <button mat-icon-button matTooltip="Show users albums and photos" (click)="showAlbums(element.id)">
+              <mat-icon>preview</mat-icon>
+            </button>
+            <button mat-icon-button matTooltip="Add new album" (click)="createAlbum(element.id)">
+              <mat-icon>add</mat-icon>
+            </button>
+          </mat-cell>
+        </ng-container>
+
         <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
         <mat-row *matRowDef="let row; columns: displayedColumns;"></mat-row>
       </mat-table>
