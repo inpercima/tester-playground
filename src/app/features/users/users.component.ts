@@ -3,6 +3,7 @@ import { MatDialog } from '@angular/material/dialog';
 import { MatTableDataSource } from '@angular/material/table';
 
 import { UsersService } from 'src/app/core/users.service';
+import { AlbumCreateDialogComponent } from 'src/app/shared/album-create-dialog/album-create-dialog.component';
 import { AlbumShowDialogComponent } from 'src/app/shared/album-show-dialog/album-show-dialog.component';
 import { User } from 'src/app/shared/user.model';
 
@@ -36,6 +37,10 @@ export class UsersComponent implements OnInit {
   }
 
   createAlbum(userId: number): void {
-
+    const dialogRef = this.dialog.open(AlbumCreateDialogComponent, {
+      data: {
+        userId,
+      }
+    });
   }
 }

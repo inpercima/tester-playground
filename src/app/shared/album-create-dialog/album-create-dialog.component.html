@@ -1,0 +1,11 @@
+<h1 mat-dialog-title>Add new album</h1>
+<div mat-dialog-content fxLayout="column">
+  <mat-form-field fxFlex>
+    <mat-label>Albumname</mat-label>
+    <input matInput placeholder="Album" [(ngModel)]="title">
+  </mat-form-field>
+  <button fxFlex mat-raised-button color="primary" (click)="addAlbum()" [disabled]="title.trim() === ''" >Save</button>
+</div>
+<div mat-dialog-actions>
+  <button mat-button mat-dialog-close>Close</button>
+</div>

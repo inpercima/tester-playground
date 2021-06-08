@@ -22,6 +22,13 @@ export class UsersService {
     return this.http.get<Album[]>(`http://jsonplaceholder.typicode.com/users/${userId}/albums`);
   }
 
+  addAlbum(userId: number, title: string): Observable<Album> {
+    return this.http.post<Album>('http://jsonplaceholder.typicode.com/albums', {
+      userId,
+      title,
+    });
+  }
+
   listPhotos(albumId: number): Observable<Photo[]> {
     return this.http.get<Photo[]>(`http://jsonplaceholder.typicode.com/photos?albumId=${albumId}`);
   }

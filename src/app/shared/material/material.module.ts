@@ -4,6 +4,7 @@ import { MatCardModule } from '@angular/material/card';
 import { MatDialogModule } from '@angular/material/dialog';
 import { MatExpansionModule } from '@angular/material/expansion';
 import { MatIconModule } from '@angular/material/icon';
+import { MatInputModule } from '@angular/material/input';
 import { MatSnackBarModule } from '@angular/material/snack-bar';
 import { MatTableModule } from '@angular/material/table';
 import { MatTooltipModule } from '@angular/material/tooltip';
@@ -15,6 +16,7 @@ import { MatTooltipModule } from '@angular/material/tooltip';
     MatDialogModule,
     MatExpansionModule,
     MatIconModule,
+    MatInputModule,
     MatSnackBarModule,
     MatTableModule,
     MatTooltipModule,
@@ -25,6 +27,7 @@ import { MatTooltipModule } from '@angular/material/tooltip';
     MatDialogModule,
     MatExpansionModule,
     MatIconModule,
+    MatInputModule,
     MatSnackBarModule,
     MatTableModule,
     MatTooltipModule,
