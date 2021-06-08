@@ -1,0 +1,54 @@
+{
+  "client": {
+    "buildDir": "dist",
+    "ghUser": "inpercima",
+    "installDependencies": true,
+    "language": "en",
+    "modules": {
+      "enabled": true,
+      "features": {
+        "defaultRoute": "users",
+        "name": "features"
+      },
+      "notFound": {
+        "enabled": false,
+        "name": ""
+      },
+      "routing": false
+    },
+    "packageJson": {
+      "contributors": [{
+        "name": "Marcel Jänicke",
+        "email": "inpercima@gmail.com"
+      }],
+      "homepage": "https://github.com/inpercima/swaaplate-hw",
+      "repository": "https://github.com/inpercima/swaaplate-hw"
+    },
+    "prefix": "hw",
+    "theme": "indigo-pink",
+    "useGoogleFonts": true,
+    "useYarn": true
+  },
+  "general": {
+    "author": "Marcel Jänicke",
+    "description": "Demo angular app using jest and cypress.",
+    "modRewriteIndex": false,
+    "name": "angular-jest-cypress",
+    "title": "Angular jest cypress",
+    "useDocker": false,
+    "useMITLicense": true,
+    "useMock": false,
+    "useSecurity": false
+  },
+  "server": {
+    "backend": "js",
+    "javaKt": {
+      "management": "",
+      "packagePath": ""
+    },
+    "php": {
+      "modRewritePhpExtension": false,
+      "serverAsApi": false
+    }
+  }
+}
