@@ -3,7 +3,7 @@ import { MAT_DIALOG_DATA } from '@angular/material/dialog';
 
 import { Album } from '../album.model';
 import { Photo } from '../photo.model';
-import { UsersService } from 'src/app/core/users.service';
+import { UsersService } from '../../core/users.service';
 
 @Component({
   selector: 'hw-album',

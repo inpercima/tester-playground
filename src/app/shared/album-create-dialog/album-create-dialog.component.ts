@@ -1,6 +1,6 @@
 import { Component, Inject } from '@angular/core';
 
-import { UsersService } from 'src/app/core/users.service';
+import { UsersService } from '../../core/users.service';
 import { MAT_DIALOG_DATA } from '@angular/material/dialog';
 import { MatSnackBar } from '@angular/material/snack-bar';
 

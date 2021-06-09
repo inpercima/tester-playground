@@ -1,6 +1,8 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
+import { FormsModule } from '@angular/forms';
 
 import { AlbumCreateDialogComponent } from './album-create-dialog.component';
+import { MaterialModule } from '../material/material.module';
 
 describe('AlbumCreateDialogComponent', () => {
   let component: AlbumCreateDialogComponent;
@@ -8,7 +10,11 @@ describe('AlbumCreateDialogComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ AlbumCreateDialogComponent ]
+      declarations: [ AlbumCreateDialogComponent ],
+      imports: [
+        FormsModule,
+        MaterialModule,
+      ],
     })
     .compileComponents();
   });

@@ -2,10 +2,10 @@ import { Component, OnInit } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
 import { MatTableDataSource } from '@angular/material/table';
 
-import { UsersService } from 'src/app/core/users.service';
-import { AlbumCreateDialogComponent } from 'src/app/shared/album-create-dialog/album-create-dialog.component';
-import { AlbumShowDialogComponent } from 'src/app/shared/album-show-dialog/album-show-dialog.component';
-import { User } from 'src/app/shared/user.model';
+import { UsersService } from '../../core/users.service';
+import { AlbumCreateDialogComponent } from '../../shared/album-create-dialog/album-create-dialog.component';
+import { AlbumShowDialogComponent } from '../../shared/album-show-dialog/album-show-dialog.component';
+import { User } from '../../shared/user.model';
 
 @Component({
   selector: 'hw-users',
