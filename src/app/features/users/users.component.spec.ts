@@ -3,6 +3,7 @@ import { ComponentFixture, TestBed } from '@angular/core/testing';
 import { UsersComponent } from './users.component';
 import { UsersService } from '../../core/users.service';
 import { MaterialModule } from '../../shared/material/material.module';
+import {HttpClientTestingModule} from "@angular/common/http/testing";
 
 describe('UsersComponent', () => {
   let component: UsersComponent;
@@ -14,6 +15,7 @@ describe('UsersComponent', () => {
       declarations: [ UsersComponent ],
       imports: [
         MaterialModule,
+        HttpClientTestingModule
       ],
     })
     .compileComponents();
