@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { BookService } from './book.service';
 
 @Component({
   selector: 'aag-dashboard',
@@ -7,9 +8,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DashboardComponent implements OnInit {
 
-  constructor() { }
+  books: any[] = [];
+  
+  constructor(private bookService: BookService) { }
 
   ngOnInit(): void {
+    this.bookService.getAll().subscribe(
+      books => this.books = books
+    )
   }
 
 }

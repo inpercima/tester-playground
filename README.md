@@ -106,7 +106,7 @@ Change for prodMode the option `production` to `true`.
 
 Defines the URL to the backend.
 
-* default: `./`
+* default: `https://api.angular.schule/graphql/`
 * type: `string`
 
 ### `appname`
