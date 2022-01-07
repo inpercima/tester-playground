@@ -12,22 +12,13 @@ This project was generated with [swaaplate](https://github.com/inpercima/swaapla
 
 ### Angular CLI
 
-* `angular-cli 12.2.5` or higher
+* `angular-cli 13.1.2` or higher
 
 ### Node, npm or yarn
 
-* `node 14.16.1` or higher in combination with
-  * `npm 6.14.12` or higher or
-  * `yarn 1.22.5` or higher, used in this repository
-
-## Dependency check
-
-Some libraries could not be updated b/c of peer dependencies or knowing issues.
-
-| library    | current version | last version | reason |
-| ---------- | --------------- | ------------ | ------ |
-| rxjs       | 6.6.6           | 7.3.0        | "@angular/flex-layout@12.0.0-beta.34" has incorrect peer dependency "rxjs@^6.0.0" |
-| typescript | 4.3.2           | 4.4.2        | "@angular-devkit/build-angular@12.2.5" has incorrect peer dependency "typescript@~4.2.3 \|\| ~4.3.2 |
+* `node 16.13.0` or higher in combination with
+  * `npm 8.1.0` or higher or
+  * `yarn 1.22.11` or higher, used in this repository
 
 ## Getting started
 
