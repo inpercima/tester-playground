@@ -1,0 +1,15 @@
+query bookList {
+  books {
+    isbn
+    title
+    authors {
+      name
+    }
+  }
+}
+
+query singleBook($isbn: ID!) {
+  book(isbn: $isbn) {
+    title
+  }
+}

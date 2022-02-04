@@ -18,6 +18,7 @@
     "@angular/platform-browser": "13.2.1",
     "@angular/platform-browser-dynamic": "13.2.1",
     "@apollo/client": "3.5.8",
+    "@graphql-codegen/cli": "2.5.0",
     "apollo-angular": "2.6.0",
     "graphql": "15.8.0",
     "rxjs": "6.6.7",
@@ -35,6 +36,10 @@
     "@angular/cli": "13.2.2",
     "@angular/compiler-cli": "13.2.1",
     "@cypress/schematic": "1.6.0",
+    "@graphql-codegen/cli": "2.5.0",
+    "@graphql-codegen/typescript-apollo-angular": "3.3.3",
+    "@graphql-codegen/typescript-operations": "2.2.4",
+    "@graphql-codegen/typescript": "2.4.3",
     "@types/jasmine": "3.10.3",
     "@types/node": "17.0.14",
     "@typescript-eslint/eslint-plugin": "5.10.2",
@@ -61,7 +66,8 @@
     "build:dev": "ng lint && ng build --configuration=development",
     "serve:dev": "ng serve -o --configuration=development",
     "watch:dev": "ng build --watch --configuration=development",
-    "build:prod": "ng lint && ng build"
+    "build:prod": "ng lint && ng build",
+    "gql": "graphql-codegen --config codegen.yml"
   },
   "version": "1.0.0-SNAPSHOT"
 }

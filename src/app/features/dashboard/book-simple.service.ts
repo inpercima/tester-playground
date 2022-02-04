@@ -5,10 +5,9 @@ import { Observable } from 'rxjs';
 import { map } from 'rxjs/operators';
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root',
 })
-export class BookService {
-
+export class BookSimpleService {
   constructor(private apollo: Apollo) { }
 
   getAll(): Observable<any> {
@@ -23,26 +22,17 @@ export class BookService {
         }
       }
     `;
-
-    return this.apollo.watchQuery<any>({ query }).valueChanges.pipe(
-      map(result => result.data.books),
-    );
+    return this.apollo.watchQuery<any>({ query }).valueChanges.pipe(map((result) => result.data.books));
   }
 
   getSingleBook(isbn: string): Observable<any> {
     const query = gql`
-      query BookSingle($isbn: ID!)
+      query BookSingle($isbn: ID!) {
         book(isbn: $isbn) {
           title
         }
       }
     `;
-
-    return this.apollo.watchQuery<any>({
-      query,
-      variables: { isbn }
-    }).valueChanges.pipe(
-      map(result => result.data.book),
-    );
+    return this.apollo.watchQuery<any>({ query, variables: { isbn } }).valueChanges.pipe(map((result) => result.data.book));
   }
 }
