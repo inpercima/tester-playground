@@ -1,7 +1,6 @@
 import { Injectable } from '@angular/core';
 
-import { Apollo } from 'apollo-angular';
-import gql from 'graphql-tag';
+import { Apollo, gql } from 'apollo-angular';
 import { Observable } from 'rxjs';
 import { map } from 'rxjs/operators';
 
@@ -13,15 +12,17 @@ export class BookService {
   constructor(private apollo: Apollo) { }
 
   getAll(): Observable<any> {
-    const query = gql`query BookList {
-      books {
-        isbn
-        title
-        authors {
-          name
+    const query = gql`
+      query BookList {
+        books {
+          isbn
+          title
+          authors {
+            name
+          }
         }
       }
-    }`;
+    `;
 
     return this.apollo.watchQuery<any>({ query }).valueChanges.pipe(
       map(result => result.data.books),
@@ -29,11 +30,13 @@ export class BookService {
   }
 
   getSingleBook(isbn: string): Observable<any> {
-    const query = gql`query BookSingle($isbn: ID!)
-      book(isbn: $isbn) {
-        title
+    const query = gql`
+      query BookSingle($isbn: ID!)
+        book(isbn: $isbn) {
+          title
+        }
       }
-    }`;
+    `;
 
     return this.apollo.watchQuery<any>({
       query,
