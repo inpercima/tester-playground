@@ -12,22 +12,13 @@ This project was generated with [swaaplate](https://github.com/inpercima/swaapla
 
 ### Angular CLI
 
-* `angular-cli 13.2.2` or higher
+* `angular-cli 13.2.4` or higher
 
 ### Node, npm or yarn
 
 * `node 16.13.0` or higher in combination with
   * `npm 8.1.0` or higher or
   * `yarn 1.22.11` or higher, used in this repository
-
-## Dependency check
-
-Some libraries could not be updated b/c of peer dependencies or knowing issues.
-
-| library    | current version | last version | reason |
-| ---------- | --------------- | ------------ | ------ |
-| graphql    | 15.8.0          | 16.3.        | "apollo-angular@2.6.0" has incorrect peer dependency "graphql@>=0.11.0 <0.14.0 \|\| ^14.0.0 \|\| ^15.0.0" |
-| rxjs       | 6.6.7           | 7.5.2        | "apollo-angular@2.6.0" has incorrect peer dependency "rxjs@^6.0.0" |
 
 ## Getting started
 
