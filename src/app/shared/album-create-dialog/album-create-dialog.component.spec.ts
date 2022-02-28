@@ -1,11 +1,11 @@
+import { HttpClientTestingModule } from '@angular/common/http/testing';
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 import { FormsModule } from '@angular/forms';
+import { MAT_DIALOG_DATA } from '@angular/material/dialog';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
-import { AlbumCreateDialogComponent } from './album-create-dialog.component';
 import { MaterialModule } from '../material/material.module';
-import {HttpClientTestingModule} from "@angular/common/http/testing";
-import {MAT_DIALOG_DATA} from "@angular/material/dialog";
-import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
+import { AlbumCreateDialogComponent } from './album-create-dialog.component';
 
 describe('AlbumCreateDialogComponent', () => {
   let component: AlbumCreateDialogComponent;
@@ -13,16 +13,10 @@ describe('AlbumCreateDialogComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ AlbumCreateDialogComponent ],
-      imports: [
-        FormsModule,
-        MaterialModule,
-        HttpClientTestingModule,
-        BrowserAnimationsModule
-      ],
-      providers: [{ provide: MAT_DIALOG_DATA, useValue: {} },]
-    })
-    .compileComponents();
+      declarations: [AlbumCreateDialogComponent],
+      imports: [FormsModule, MaterialModule, HttpClientTestingModule, BrowserAnimationsModule],
+      providers: [{ provide: MAT_DIALOG_DATA, useValue: {} }],
+    }).compileComponents();
   });
 
   beforeEach(() => {

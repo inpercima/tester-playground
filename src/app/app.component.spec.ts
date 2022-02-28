@@ -1,10 +1,11 @@
-import {ComponentFixture, TestBed} from '@angular/core/testing';
+import { HttpClientTestingModule } from '@angular/common/http/testing';
+import { ComponentFixture, TestBed } from '@angular/core/testing';
+import { FormsModule } from '@angular/forms';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
 import { AppComponent } from './app.component';
-import {UsersComponent} from "./features/users/users.component";
-import {FormsModule} from "@angular/forms";
-import {MaterialModule} from "./shared/material/material.module";
-import {HttpClientTestingModule} from "@angular/common/http/testing";
-import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
+import { UsersComponent } from './features/users/users.component';
+import { MaterialModule } from './shared/material/material.module';
 
 describe('AppComponent', () => {
   let component: AppComponent;
@@ -12,14 +13,8 @@ describe('AppComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ AppComponent,UsersComponent ],
-      imports: [
-        FormsModule,
-        MaterialModule,
-        HttpClientTestingModule,
-        BrowserAnimationsModule
-      ],
-
+      declarations: [AppComponent, UsersComponent],
+      imports: [FormsModule, MaterialModule, HttpClientTestingModule, BrowserAnimationsModule],
     }).compileComponents();
   });
 

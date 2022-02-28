@@ -1,24 +1,22 @@
 # Angular jest cypress
 
 [![MIT license](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md)
-[![dependencies Status](https://status.david-dm.org/gh/inpercima/angular-jest-cypress.svg)](https://david-dm.org/inpercima/angular-jest-cypress)
-[![devDependencies Status](https://status.david-dm.org/gh/inpercima/angular-jest-cypress.svg?type=dev)](https://david-dm.org/inpercima/angular-jest-cypress?type=dev)
 
 Demo angular app using jest and cypress.
 
-This project was generated with [swaaplate](https://github.com/inpercima/swaaplate) version 2.3.0-SNAPSHOT.
+This project was generated with [swaaplate](https://github.com/inpercima/swaaplate) version 2.3.0.
 
 ## Prerequisites
 
 ### Angular CLI
 
-* `angular-cli 13.1.2` or higher
+* `angular-cli 13.2.5` or higher
 
 ### Node, npm or yarn
 
 * `node 16.13.0` or higher in combination with
   * `npm 8.1.0` or higher or
-  * `yarn 1.22.11` or higher, used in this repository
+  * `yarn 1.22.17` or higher, used in this repository
 
 ## Getting started
 
