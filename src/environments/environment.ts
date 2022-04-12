@@ -4,7 +4,7 @@
 
 export const environment = {
   api: './',
-  appname: 'Angular Mqtt',
+  appname: 'Angular mqtt',
   defaultRoute: 'dashboard',
   production: false,
   theme: 'indigo-pink',

@@ -5,7 +5,7 @@
     "installDependencies": true,
     "language": "en",
     "modules": {
-      "enabled": false,
+      "enabled": true,
       "features": {
         "defaultRoute": "dashboard",
         "name": "features"
@@ -21,12 +21,12 @@
         "name": "Marcel Jänicke",
         "email": "inpercima@gmail.com"
       }],
-      "homepage": "https://github.com/inpercima/test-angular-mqtt",
-      "repository": "https://github.com/inpercima/test-angular-mqtt"
+      "homepage": "https://github.com/inpercima/test-angular-mqtt/",
+      "repository": "https://github.com/inpercima/test-angular-mqtt/"
     },
     "prefix": "amqtt",
     "theme": "indigo-pink",
-    "useGoogleFonts": false,
+    "useGoogleFonts": true,
     "useYarn": true
   },
   "general": {
@@ -34,7 +34,7 @@
     "description": "Demo app using angular and mqtt together.",
     "modRewriteIndex": false,
     "name": "test-angular-mqtt",
-    "title": "Angular Mqtt",
+    "title": "Angular mqtt",
     "useDocker": false,
     "useMITLicense": true,
     "useMock": false,

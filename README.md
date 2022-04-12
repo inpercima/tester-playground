@@ -1,4 +1,4 @@
-# Angular Mqtt
+# Angular mqtt
 
 [![MIT license](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md)
 
@@ -22,7 +22,7 @@ This project was generated with [swaaplate](https://github.com/inpercima/swaapla
 
 ```bash
 # clone project
-git clone https://github.com/inpercima/test-angular-mqtt
+git clone https://github.com/inpercima/test-angular-mqtt/
 cd test-angular-mqtt
 
 # install tools and frontend dependencies
@@ -102,7 +102,7 @@ Defines the URL to the backend.
 
 Applicationwide title of the app, displayed in title and toolbar.
 
-* default: `Angular Mqtt`
+* default: `Angular mqtt`
 * type: `string`
 
 ### `defaultRoute`
