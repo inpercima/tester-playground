@@ -8,7 +8,7 @@ import { AlbumShowDialogComponent } from '../../shared/album-show-dialog/album-s
 import { User } from '../../shared/user.model';
 
 @Component({
-  selector: 'hw-users',
+  selector: 'tajc-users',
   templateUrl: './users.component.html',
   styleUrls: ['./users.component.css']
 })

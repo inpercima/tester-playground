@@ -17,7 +17,6 @@
     "@angular/material": "14.0.0",
     "@angular/platform-browser": "14.0.0",
     "@angular/platform-browser-dynamic": "14.0.0",
-    "@cypress/schematic": "2.0.0",
     "rxjs": "7.5.5",
     "tslib": "2.4.0",
     "zone.js": "0.11.5"
@@ -33,6 +32,7 @@
     "@angular-eslint/template-parser": "13.2.1",
     "@angular/cli": "14.0.0",
     "@angular/compiler-cli": "14.0.0",
+    "@cypress/schematic": "2.0.0",
     "@types/jest": "28.1.1",
     "@types/node": "17.0.40",
     "@typescript-eslint/eslint-plugin": "5.27.1",
@@ -46,15 +46,15 @@
   "engines": {
     "node": ">=16.13.0"
   },
-  "homepage": "https://github.com/inpercima/swaaplate-hw",
+  "homepage": "https://github.com/inpercima/test-angular-jest-cypress",
   "license": "MIT",
-  "name": "angular-jest-cypress",
+  "name": "test-angular-jest-cypress",
   "private": true,
-  "repository": "https://github.com/inpercima/swaaplate-hw",
+  "repository": "https://github.com/inpercima/test-angular-jest-cypress",
   "scripts": {
-    "build:dev": "ng lint && ng build --configuration=dev",
-    "serve:dev": "ng serve -o --configuration=dev",
-    "watch:dev": "ng build --watch --configuration=dev",
+    "build:dev": "ng lint && ng build --configuration=development",
+    "serve:dev": "ng serve -o --configuration=development",
+    "watch:dev": "ng build --watch --configuration=development",
     "build:prod": "ng lint && ng build"
   },
   "version": "1.0.0-SNAPSHOT"

@@ -1,10 +1,10 @@
-# Angular jest cypress
+# Test angular jest cypress
 
 [![MIT license](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md)
 
 Demo angular app using jest and cypress.
 
-This project was generated with [swaaplate](https://github.com/inpercima/swaaplate) version 2.3.0.
+This project was generated with [swaaplate](https://github.com/inpercima/swaaplate) version 2.3.4.
 
 ## Prerequisites
 
@@ -22,8 +22,8 @@ This project was generated with [swaaplate](https://github.com/inpercima/swaapla
 
 ```bash
 # clone project
-git clone https://github.com/inpercima/swaaplate-hw
-cd angular-jest-cypress
+git clone https://github.com/inpercima/test-angular-jest-cypress
+cd test-angular-jest-cypress
 
 # install tools and frontend dependencies
 yarn
@@ -102,7 +102,7 @@ Defines the URL to the backend.
 
 Applicationwide title of the app, displayed in title and toolbar.
 
-* default: `Angular jest cypress`
+* default: `Test angular jest cypress`
 * type: `string`
 
 ### `defaultRoute`

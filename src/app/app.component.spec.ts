@@ -29,11 +29,11 @@ describe('AppComponent', () => {
   });
 
   it(`should have as appname 'Angular jest cypress'`, () => {
-    expect(component.appname).toEqual('Angular jest cypress');
+    expect(component.appname).toEqual('Test angular jest cypress');
   });
 
   it('should render toolbar', () => {
     const compiled = fixture.nativeElement;
-    expect(compiled.querySelector('mat-toolbar').textContent).toContain('Angular jest cypress');
+    expect(compiled.querySelector('mat-toolbar').textContent).toContain('Test angular jest cypress');
   });
 });

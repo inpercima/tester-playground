@@ -4,7 +4,7 @@
 
 export const environment = {
   api: './',
-  appname: 'Angular jest cypress',
+  appname: 'Test angular jest cypress',
   defaultRoute: 'users',
   production: false,
   theme: 'indigo-pink',

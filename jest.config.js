@@ -1,12 +1,10 @@
+/**
+ * The file setup-jest.js and the configuration 'setupFilesAfterEnv' here are not need if the jest builder form
+ * https://github.com/just-jeb/angular-builders is used.
+ */
 module.exports = {
   collectCoverage: true,
   coverageReporters: ['html', 'cobertura'],
-  /** check: https://thymikee.github.io/jest-preset-angular/docs/getting-started/options */
-  moduleNameMapper: {
-    '^(.*)/environments/(.*)$': '<rootDir>/src/environments/environment.ts',
-    "^(.*)/shared/(.*)$": "<rootDir>/src/app/shared/$2",
-  },
   preset: 'jest-preset-angular',
-  setupFilesAfterEnv: ['<rootDir>/setup-jest.ts'],
-  testPathIgnorePatterns: ["<rootDir>/cypress"],
+  globalSetup: 'jest-preset-angular/global-setup',
 };

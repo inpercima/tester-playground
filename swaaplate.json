@@ -21,10 +21,10 @@
         "name": "Marcel Jänicke",
         "email": "inpercima@gmail.com"
       }],
-      "homepage": "https://github.com/inpercima/swaaplate-hw",
-      "repository": "https://github.com/inpercima/swaaplate-hw"
+      "homepage": "https://github.com/inpercima/test-angular-jest-cypress",
+      "repository": "https://github.com/inpercima/test-angular-jest-cypress"
     },
-    "prefix": "hw",
+    "prefix": "tajc",
     "theme": "indigo-pink",
     "useGoogleFonts": true,
     "useYarn": true
@@ -33,8 +33,8 @@
     "author": "Marcel Jänicke",
     "description": "Demo angular app using jest and cypress.",
     "modRewriteIndex": false,
-    "name": "angular-jest-cypress",
-    "title": "Angular jest cypress",
+    "name": "test-angular-jest-cypress",
+    "title": "Test angular jest cypress",
     "useDocker": false,
     "useMITLicense": true,
     "useMock": false,

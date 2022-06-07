@@ -1,7 +1,7 @@
 describe('Test dashboard', () => {
   it('Check app title', () => {
     cy.visit('/');
-    cy.contains('Angular jest cypress');
+    cy.contains('Test angular jest cypress');
   })
 
   it('Check row count', () => {

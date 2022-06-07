@@ -5,7 +5,7 @@ import { Title } from '@angular/platform-browser';
 import { environment } from '../environments/environment';
 
 @Component({
-  selector: 'hw-root',
+  selector: 'tajc-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css'],
 })
