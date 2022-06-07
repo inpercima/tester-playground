@@ -8,6 +8,12 @@ export const environment = {
   defaultRoute: 'dashboard',
   production: false,
   theme: 'indigo-pink',
+  mqtt: {
+    hostname: 'localhost',
+    port: 9001,
+    path: '/mqtt',
+    topic: 'topic'
+  }
 };
 
 /*
