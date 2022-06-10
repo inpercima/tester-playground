@@ -88,6 +88,10 @@ Change for prodMode the option `production` to `true`.
 * [api](#api)
 * [appname](#appname)
 * [defaultRoute](#defaultRoute)
+* [mqtt/hostname](#mqtthostname)
+* [mqtt/path](#mqttpath)
+* [mqtt/port](#mqttport)
+* [mqtt/topic](#mqtttopic)
 * [production](#production)
 * [theme](#theme)
 
@@ -110,6 +114,35 @@ Applicationwide title of the app, displayed in title and toolbar.
 The default route and the route to be redirected after a login if no route is stored or if a route does not exist.
 
 * default: `dashboard`
+* type: `string`
+
+### `mqtt/hostname`
+
+The mqtt server to connect.
+
+* default: `test.mosquitto.org`
+* type: `string`
+
+### `mqtt/path`
+
+The path of the mqtt server.
+
+* default: `/mqtt`
+* type: `string`
+
+### `mqtt/port`
+
+The port of the mqtt server.
+
+* default: `8080`
+* type: `number`
+
+### `mqtt/topic`
+
+The topic to be observed from the mqtt server.
+To observe a topic you need the full path.
+
+* default: `$SYS/broker/connection/mdh/state`
 * type: `string`
 
 ### `production`
