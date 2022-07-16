@@ -2,7 +2,7 @@ overwrite: true
 schema: "https://api.angular.schule/graphql"
 documents: "src/**/*.graphql"
 generates:
-  src/graphql/generated/graphql.ts:
+  src/graphql/graphql.ts:
     plugins:
       - "typescript"
       - "typescript-operations"

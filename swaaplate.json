@@ -5,7 +5,7 @@
     "installDependencies": true,
     "language": "en",
     "modules": {
-      "enabled": true,
+      "enabled": false,
       "features": {
         "defaultRoute": "dashboard",
         "name": "features"
@@ -21,8 +21,8 @@
         "name": "Marcel Jänicke",
         "email": "inpercima@gmail.com"
       }],
-      "homepage": "https://github.com/inpercima/angular-apollo-graphql/",
-      "repository": "https://github.com/inpercima/angular-apollo-graphql/"
+      "homepage": "https://github.com/inpercima/test-angular-apollo-graphql/",
+      "repository": "https://github.com/inpercima/test-angular-apollo-graphql/"
     },
     "prefix": "aag",
     "theme": "indigo-pink",
@@ -33,8 +33,8 @@
     "author": "Marcel Jänicke",
     "description": "Simple angular app working against the public api of angular.schule to learn apollo and graphql.",
     "modRewriteIndex": false,
-    "name": "angular-apollo-graphql",
-    "title": "Angular apollo graphql",
+    "name": "test-angular-apollo-graphql",
+    "title": "Test angular apollo graphql",
     "useDocker": false,
     "useMITLicense": true,
     "useMock": false,

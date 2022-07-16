@@ -1,31 +1,29 @@
-# Angular apollo graphql
+# Test angular apollo graphql
 
 [![MIT license](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md)
-[![dependencies Status](https://status.david-dm.org/gh/inpercima/angular-apollo-graphql.svg)](https://david-dm.org/inpercima/angular-apollo-graphql)
-[![devDependencies Status](https://status.david-dm.org/gh/inpercima/angular-apollo-graphql.svg?type=dev)](https://david-dm.org/inpercima/angular-apollo-graphql?type=dev)
 
 Simple angular app working against the public api of angular.schule to learn apollo and graphql.
 
-This project was generated with [swaaplate](https://github.com/inpercima/swaaplate) version 2.3.1.
+This project was generated with [swaaplate](https://github.com/inpercima/swaaplate) version 2.3.5.
 
 ## Prerequisites
 
 ### Angular CLI
 
-* `angular-cli 13.3.2` or higher
+* `angular-cli 14.0.6` or higher
 
 ### Node, npm or yarn
 
-* `node 16.13.0` or higher in combination with
-  * `npm 8.1.0` or higher or
-  * `yarn 1.22.17` or higher, used in this repository
+* `node 16.16.0` or higher in combination with
+  * `npm 8.12.2` or higher or
+  * `yarn 1.22.19` or higher, used in this repository
 
 ## Getting started
 
 ```bash
 # clone project
-git clone https://github.com/inpercima/angular-apollo-graphql/
-cd angular-apollo-graphql
+git clone https://github.com/inpercima/test-angular-apollo-graphql/
+cd test-angular-apollo-graphql
 
 # install tools and frontend dependencies
 yarn
@@ -104,7 +102,7 @@ Defines the URL to the backend.
 
 Applicationwide title of the app, displayed in title and toolbar.
 
-* default: `Angular apollo graphql`
+* default: `Test angular apollo graphql`
 * type: `string`
 
 ### `defaultRoute`

@@ -2,7 +2,8 @@ import { Injectable } from '@angular/core';
 
 import { Observable } from 'rxjs';
 import { map } from 'rxjs/operators';
-import { BookListGQL, BookListQuery, SingleBookGQL, SingleBookQuery } from 'src/graphql/generated/graphql';
+
+import { BookListGQL, BookListQuery, SingleBookGQL, SingleBookQuery } from 'src/graphql/graphql';
 
 @Injectable({
   providedIn: 'root',

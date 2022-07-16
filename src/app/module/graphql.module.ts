@@ -4,7 +4,7 @@ import { InMemoryCache } from '@apollo/client/core';
 import { ApolloModule, APOLLO_OPTIONS } from 'apollo-angular';
 import { HttpLink } from 'apollo-angular/http';
 
-import { environment } from '../environments/environment';
+import { environment } from '../../environments/environment';
 
 @NgModule({
   imports: [

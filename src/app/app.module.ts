@@ -5,10 +5,8 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
-import { GraphQLModule } from './graphql.module';
-
 import { AppComponent } from './app.component';
-import { FeaturesModule } from './features/features.module';
+import { GraphQLModule } from './module/graphql.module';
 
 @NgModule({
   declarations: [
@@ -19,7 +17,6 @@ import { FeaturesModule } from './features/features.module';
     BrowserModule,
     MatToolbarModule,
     OverlayModule,
-    FeaturesModule,
     GraphQLModule,
     HttpClientModule,
   ],
