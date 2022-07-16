@@ -75,6 +75,13 @@ ng test
 ng e2e
 ```
 
+### Graphql
+
+```bash
+# generate graphql schema from backend
+yarn gql
+```
+
 ## Configuration
 
 ### General
