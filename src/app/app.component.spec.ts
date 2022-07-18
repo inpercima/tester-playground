@@ -1,13 +1,20 @@
+import { HttpClientModule } from '@angular/common/http';
 import { TestBed } from '@angular/core/testing';
 import { MatToolbarModule } from '@angular/material/toolbar';
 
+import { ApolloModule } from 'apollo-angular';
+
 import { AppComponent } from './app.component';
+import { GraphQLModule } from './module/graphql.module';
 
 describe('AppComponent', () => {
   beforeEach(async () => {
     await TestBed.configureTestingModule({
       imports: [
+        ApolloModule,
+        HttpClientModule,
         MatToolbarModule,
+        GraphQLModule,
       ],
       declarations: [
         AppComponent,

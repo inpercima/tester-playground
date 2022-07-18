@@ -1,12 +1,20 @@
 import { TestBed } from '@angular/core/testing';
+import { Apollo, ApolloModule } from 'apollo-angular';
 
 import { BookCodegenService } from './book-codegen.service';
 
 describe('BookCodegenService', () => {
   let service: BookCodegenService;
 
-  beforeEach(() => {
-    TestBed.configureTestingModule({});
+  beforeEach(async () => {
+    await TestBed.configureTestingModule({
+      imports: [
+        ApolloModule
+      ],
+      providers: [
+        Apollo
+      ],
+    }).compileComponents();
     service = TestBed.inject(BookCodegenService);
   });
 

@@ -20,7 +20,6 @@ import { GraphQLModule } from './module/graphql.module';
     GraphQLModule,
     HttpClientModule,
   ],
-  providers: [],
   bootstrap: [
     AppComponent,
   ],
