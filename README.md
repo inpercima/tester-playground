@@ -4,13 +4,13 @@
 
 Simple angular app working against the public api of angular.schule to learn apollo and graphql.
 
-This project was generated with [swaaplate](https://github.com/inpercima/swaaplate) version 2.3.5.
+This project was generated with [swaaplate](https://github.com/inpercima/swaaplate) version 2.3.7.
 
 ## Prerequisites
 
 ### Angular CLI
 
-* `angular-cli 14.0.6` or higher
+* `angular-cli 14.1.0` or higher
 
 ### Node, npm or yarn
 
