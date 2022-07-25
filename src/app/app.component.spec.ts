@@ -16,9 +16,7 @@ describe('AppComponent', () => {
       declarations: [AppComponent, UsersComponent],
       imports: [FormsModule, MaterialModule, HttpClientTestingModule, BrowserAnimationsModule],
     }).compileComponents();
-  });
 
-  beforeEach(() => {
     fixture = TestBed.createComponent(AppComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
@@ -33,7 +31,7 @@ describe('AppComponent', () => {
   });
 
   it('should render toolbar', () => {
-    const compiled = fixture.nativeElement;
-    expect(compiled.querySelector('mat-toolbar').textContent).toContain('Test angular jest cypress');
+    const compiled = fixture.nativeElement as HTMLElement;
+    expect(compiled.querySelector('mat-toolbar')?.textContent).toContain('Test angular jest cypress');
   });
 });

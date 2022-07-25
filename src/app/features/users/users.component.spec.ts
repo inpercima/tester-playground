@@ -12,12 +12,16 @@ describe('UsersComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [UsersComponent],
-      imports: [MaterialModule, HttpClientTestingModule],
-    }).compileComponents();
-  });
+      declarations: [
+        UsersComponent,
+      ],
+      imports: [
+        MaterialModule,
+        HttpClientTestingModule,
+      ],
+    })
+    .compileComponents();
 
-  beforeEach(() => {
     fixture = TestBed.createComponent(UsersComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
