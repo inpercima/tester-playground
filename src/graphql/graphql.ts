@@ -1332,6 +1332,11 @@ export type MissionQueryVariables = Exact<{
 
 export type MissionQuery = { __typename?: 'Query', mission?: { __typename?: 'Mission', name?: string | null } | null };
 
+export type UsersSubscriptionVariables = Exact<{ [key: string]: never; }>;
+
+
+export type UsersSubscription = { __typename?: 'Subscription', users: Array<{ __typename?: 'users', name?: string | null }> };
+
 export const MissionsDocument = gql`
     query missions {
   missions {
@@ -1363,6 +1368,24 @@ export const MissionDocument = gql`
   })
   export class MissionGQL extends Apollo.Query<MissionQuery, MissionQueryVariables> {
     override document = MissionDocument;
+    
+    constructor(apollo: Apollo.Apollo) {
+      super(apollo);
+    }
+  }
+export const UsersDocument = gql`
+    subscription users {
+  users {
+    name
+  }
+}
+    `;
+
+  @Injectable({
+    providedIn: 'root'
+  })
+  export class UsersGQL extends Apollo.Subscription<UsersSubscription, UsersSubscriptionVariables> {
+    override document = UsersDocument;
     
     constructor(apollo: Apollo.Apollo) {
       super(apollo);

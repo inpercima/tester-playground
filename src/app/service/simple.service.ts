@@ -7,7 +7,7 @@ import { map } from 'rxjs/operators';
 @Injectable({
   providedIn: 'root',
 })
-export class MissionSimpleService {
+export class SimpleService {
   constructor(private apollo: Apollo) { }
 
   getMissions(): Observable<any> {
@@ -30,5 +30,16 @@ export class MissionSimpleService {
     }
     `;
     return this.apollo.watchQuery<any>({ query, variables: { id } }).valueChanges.pipe(map((result) => result.data.mission));
+  }
+
+  getUsers(): Observable<any> {
+    const query = gql`
+    subscription users {
+      users {
+        name
+      }
+    }
+    `;
+    return this.apollo.subscribe<any>({ query }).pipe(map(result => result.data.users));
   }
 }

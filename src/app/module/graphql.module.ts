@@ -1,8 +1,11 @@
 import { NgModule } from '@angular/core';
 
-import { InMemoryCache } from '@apollo/client/core';
+import { InMemoryCache, split } from '@apollo/client/core';
+import { GraphQLWsLink } from '@apollo/client/link/subscriptions';
+import { getMainDefinition } from '@apollo/client/utilities';
 import { ApolloModule, APOLLO_OPTIONS } from 'apollo-angular';
 import { HttpLink } from 'apollo-angular/http';
+import { createClient } from 'graphql-ws';
 
 import { environment } from '../../environments/environment';
 
@@ -10,16 +13,35 @@ import { environment } from '../../environments/environment';
   imports: [
     ApolloModule,
   ],
+  // see: https://github.com/kamilkisiela/apollo-angular/issues/1801#issuecomment-1191376268
   providers: [
     {
       provide: APOLLO_OPTIONS,
       useFactory: (httpLink: HttpLink) => {
-        return {
-          cache: new InMemoryCache(),
-          link: httpLink.create({
-            uri: environment.api,
+        // http link
+        const http = httpLink.create({
+          uri: environment.api,
+        });
+        // websocket link:
+        const ws = new GraphQLWsLink(
+          createClient({
+            url: environment.api.replace('https', 'ws'),
           }),
-        };
+        );
+
+        // using the ability to split links, you can send data to each link
+        // depending on what kind of operation is being sent
+        const link = split(
+          ({ query }) => {
+            const call = getMainDefinition(query);
+            console.log('GraphQL call > ', call);
+            return (call.kind === 'OperationDefinition' && call.operation === 'subscription');
+          },
+          ws,
+          http,
+        );
+
+        return { link, cache: new InMemoryCache() };
       },
       deps: [HttpLink],
     },

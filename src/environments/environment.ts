@@ -3,7 +3,7 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  api: 'https://api.angular.schule/graphql',
+  api: 'https://api.spacex.land/graphql',
   appname: 'Test angular apollo graphql',
   defaultRoute: 'dashboard',
   production: false,
