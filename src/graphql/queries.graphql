@@ -1,15 +1,11 @@
-query bookList {
-  books {
-    isbn
-    title
-    authors {
-      name
-    }
+query missions {
+  missions {
+    name
   }
 }
 
-query singleBook($isbn: ID!) {
-  book(isbn: $isbn) {
-    title
+query mission($id: ID!) {
+  mission(id: $id) {
+    name
   }
 }

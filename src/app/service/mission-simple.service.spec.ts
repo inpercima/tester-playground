@@ -1,10 +1,10 @@
 import { TestBed } from '@angular/core/testing';
 import { Apollo, ApolloModule } from 'apollo-angular';
 
-import { BookCodegenService } from './book-codegen.service';
+import { MissionSimpleService } from './mission-simple.service';
 
-describe('BookCodegenService', () => {
-  let service: BookCodegenService;
+describe('MissionSimpleService', () => {
+  let service: MissionSimpleService;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
@@ -13,9 +13,9 @@ describe('BookCodegenService', () => {
       ],
       providers: [
         Apollo
-      ],
+      ]
     }).compileComponents();
-    service = TestBed.inject(BookCodegenService);
+    service = TestBed.inject(MissionSimpleService);
   });
 
   it('should be created', () => {

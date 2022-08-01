@@ -2,10 +2,11 @@ import { OverlayContainer } from '@angular/cdk/overlay';
 import { Component, HostBinding, OnInit } from '@angular/core';
 import { Title } from '@angular/platform-browser';
 
+import { MissionQuery, MissionsQuery } from 'src/graphql/graphql';
+
 import { environment } from '../environments/environment';
-import { BookListQuery, SingleBookQuery } from 'src/graphql/graphql';
-import { BookCodegenService } from './service/book-codegen.service';
-import { BookSimpleService } from './service/book-simple.service';
+import { MissionCodegenService } from './service/mission-codegen.service';
+import { MissionSimpleService } from './service/mission-simple.service';
 
 @Component({
   selector: 'aag-root',
@@ -15,10 +16,10 @@ import { BookSimpleService } from './service/book-simple.service';
 export class AppComponent implements OnInit {
 
   public appname: string;
-  booksSimple: any[] = [];
-  booksCodegen!: BookListQuery['books'];
-  singleBookSimple!: any;
-  singleBookCodegen!: SingleBookQuery['book'];
+  missionsSimple: any[] = [];
+  missionsCodegen!: MissionsQuery['missions'];
+  missionSimple: any;
+  missionCodegen!: MissionQuery['mission'];
 
   /**
    * Adds the custom theme to the app root.
@@ -31,19 +32,19 @@ export class AppComponent implements OnInit {
   @HostBinding('class') class = `${environment.theme}-theme`;
 
   public constructor(private titleService: Title, public overlayContainer: OverlayContainer,
-    private booksCodegenService: BookCodegenService, private bookSimpleService: BookSimpleService) {
+    private missionCodegenService: MissionCodegenService, private missionSimpleService: MissionSimpleService) {
     this.appname = environment.appname;
     this.titleService.setTitle(this.appname);
     this.overlayContainer.getContainerElement().classList.add(`${environment.theme}-theme`);
   }
 
   ngOnInit(): void {
-    this.bookSimpleService.getAll().subscribe((books) => (this.booksSimple = books));
-    this.booksCodegenService.getAll().subscribe((books) => (this.booksCodegen = books));
+    this.missionSimpleService.getMissions().subscribe((missions) => (this.missionsSimple = missions));
+    this.missionCodegenService.getMissions().subscribe((missions) => (this.missionsCodegen = missions));
   }
 
-  getSingleBook(): void {
-    this.bookSimpleService.getSingleBook('9783960091417').subscribe((book) => (this.singleBookSimple = book));
-    this.booksCodegenService.getSingleBook('9783960091417').subscribe((book) => (this.singleBookCodegen = book));
+  getMission(): void {
+    this.missionSimpleService.getMission('F7709F2').subscribe((mission) => (this.missionSimple = mission));
+    this.missionCodegenService.getMission('F7709F2').subscribe((mission) => (this.missionCodegen = mission));
   }
 }

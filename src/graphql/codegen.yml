@@ -1,5 +1,5 @@
 overwrite: true
-schema: "https://api.angular.schule/graphql"
+schema: "https://api.spacex.land/graphql"
 documents: "src/**/*.graphql"
 generates:
   src/graphql/graphql.ts:

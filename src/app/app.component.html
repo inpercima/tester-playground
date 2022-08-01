@@ -2,19 +2,19 @@
   <mat-toolbar color="primary" class="mat-elevation-z4">
     {{ appname }}
   </mat-toolbar>
-  <h1>BookList simple</h1>
-  <div *ngIf="booksSimple">
-    <div *ngFor="let book of booksSimple">{{ book.title }}</div>
+  <h1>Mission list simple</h1>
+  <div *ngIf="missionsSimple">
+    <div *ngFor="let mission of missionsSimple">{{ mission.name }}</div>
   </div>
 
-  <h1>BookList codegen</h1>
-  <div *ngIf="booksCodegen">
-    <div *ngFor="let book of booksCodegen">{{ book?.title }}</div>
+  <h1>Mission list codegen</h1>
+  <div *ngIf="missionsCodegen">
+    <div *ngFor="let mission of missionsCodegen">{{ mission?.name }}</div>
   </div>
 
   <div>
-    <button (click)="getSingleBook()">getSingleBook</button>
-    <div *ngIf="singleBookSimple">singeBookSimple: {{ singleBookSimple.title }}</div>
-    <div *ngIf="singleBookCodegen">singeBookCodegen: {{ singleBookCodegen?.title }}</div>
+    <button (click)="getMission()">getMission</button>
+    <div *ngIf="missionSimple">single mission simple: {{ missionSimple.name }}</div>
+    <div *ngIf="missionCodegen">single mission codegen: {{ missionCodegen.name }}</div>
   </div>
 </div>
