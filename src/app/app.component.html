@@ -2,19 +2,19 @@
   <mat-toolbar color="primary" class="mat-elevation-z4">
     {{ appname }}
   </mat-toolbar>
-  <h1>Mission list simple</h1>
-  <div *ngIf="missionsSimple">
-    <div *ngFor="let mission of missionsSimple">{{ mission.name }}</div>
+  <h1>Launches list simple</h1>
+  <div *ngIf="launchesSimple">
+    <div *ngFor="let launch of launchesSimple">{{ launch.mission.name }}</div>
   </div>
 
-  <h1>Mission list codegen</h1>
-  <div *ngIf="missionsCodegen">
-    <div *ngFor="let mission of missionsCodegen">{{ mission?.name }}</div>
+  <h1>Launches list codegen</h1>
+  <div *ngIf="launchesCodegen">
+    <div *ngFor="let launch of launchesCodegen">{{ launch.mission?.name }}</div>
   </div>
 
   <div>
     <button (click)="getMission()">getMission</button>
-    <div *ngIf="missionSimple">single mission simple: {{ missionSimple.name }}</div>
-    <div *ngIf="missionCodegen">single mission codegen: {{ missionCodegen.name }}</div>
+    <div *ngIf="missionSimple">single mission simple: {{ missionSimple.mission.name }}</div>
+    <div *ngIf="missionCodegen">single mission codegen: {{ missionCodegen.mission?.name }}</div>
   </div>
 </div>

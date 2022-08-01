@@ -1,5 +1,3 @@
-subscription users {
-  users {
-    name
-  }
+subscription tripsBooked {
+  tripsBooked
 }

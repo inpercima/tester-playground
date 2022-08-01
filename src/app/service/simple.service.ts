@@ -10,36 +10,40 @@ import { map } from 'rxjs/operators';
 export class SimpleService {
   constructor(private apollo: Apollo) { }
 
-  getMissions(): Observable<any> {
+  getLaunches(): Observable<any> {
     const query = gql`
-      query missions {
-        missions {
-          name
+      query Launches {
+        launches {
+          launches {
+            mission {
+              name
+            }
+          }
         }
       }
     `;
-    return this.apollo.watchQuery<any>({ query }).valueChanges.pipe(map((result) => result.data.missions));
+    return this.apollo.watchQuery<any>({ query }).valueChanges.pipe(map((result) => result.data.launches));
   }
 
-  getMission(id: string): Observable<any> {
+  getMission(launchId: string): Observable<any> {
     const query = gql`
-    query mission($id: ID!) {
-      mission(id: $id) {
-        name
+      query Mission($launchId: ID!) {
+        launch(id: $launchId) {
+          mission {
+            name
+          }
+        }
       }
-    }
     `;
-    return this.apollo.watchQuery<any>({ query, variables: { id } }).valueChanges.pipe(map((result) => result.data.mission));
+    return this.apollo.watchQuery<any>({ query, variables: { launchId } }).valueChanges.pipe(map((result) => result.data.launch));
   }
 
-  getUsers(): Observable<any> {
+  getTripsBooked(): Observable<any> {
     const query = gql`
-    subscription users {
-      users {
-        name
+      subscription TripsBooked {
+        tripsBooked
       }
-    }
     `;
-    return this.apollo.subscribe<any>({ query }).pipe(map(result => result.data.users));
+    return this.apollo.subscribe<any>({ query }).pipe(map(result => result?.data?.tripsBooked));
   }
 }

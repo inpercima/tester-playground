@@ -1,11 +1,17 @@
-query missions {
-  missions {
-    name
+query Launches {
+  launches {
+    launches {
+      mission {
+        name
+      }
+    }
   }
 }
 
-query mission($id: ID!) {
-  mission(id: $id) {
-    name
+query Mission($launchId: ID!) {
+  launch(id: $launchId) {
+    mission {
+      name
+    }
   }
 }

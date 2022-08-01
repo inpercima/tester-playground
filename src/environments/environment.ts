@@ -3,11 +3,12 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  api: 'https://api.spacex.land/graphql',
+  api: 'https://apollo-fullstack-tutorial.herokuapp.com/graphql',
   appname: 'Test angular apollo graphql',
   defaultRoute: 'dashboard',
   production: false,
   theme: 'indigo-pink',
+  wsType: 'subscriptions-transport-ws'
 };
 
 /*

@@ -3,23 +3,23 @@ import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 import { map } from 'rxjs/operators';
 
-import { MissionGQL, MissionQuery, MissionsGQL, MissionsQuery, Users, UsersGQL, UsersSubscription } from 'src/graphql/graphql';
+import { LaunchesGQL, LaunchesQuery, MissionGQL, MissionQuery, TripsBookedGQL, TripsBookedSubscription } from 'src/graphql/graphql';
 
 @Injectable({
   providedIn: 'root',
 })
 export class CodegenService {
-  constructor(private missionsGQL: MissionsGQL, private missionGQL: MissionGQL, private usersGQL: UsersGQL) {}
+  constructor(private launchesGQL: LaunchesGQL, private missionGQL: MissionGQL, private tripsBookedGQL: TripsBookedGQL) {}
 
-  getMissions(): Observable<MissionsQuery['missions']> {
-    return this.missionsGQL.watch().valueChanges.pipe(map((result) => result.data.missions));
+  getLaunches(): Observable<LaunchesQuery['launches']> {
+    return this.launchesGQL.watch().valueChanges.pipe(map((result) => result.data.launches));
   }
 
-  getMission(id: string): Observable<MissionQuery['mission']> {
-    return this.missionGQL.watch({ id }).valueChanges.pipe(map((result) => result.data.mission));
+  getMission(launchId: string): Observable<MissionQuery['launch']> {
+    return this.missionGQL.watch({ launchId }).valueChanges.pipe(map((result) => result.data.launch));
   }
 
-  getUsers(): Observable<UsersSubscription['users']> {
-    return this.usersGQL.subscribe().pipe<any>(map((result) => result?.data?.users));
+  getTripsBooked(): Observable<TripsBookedSubscription['tripsBooked']> {
+    return this.tripsBookedGQL.subscribe().pipe<any>(map((result) => result?.data?.tripsBooked));
   }
 }

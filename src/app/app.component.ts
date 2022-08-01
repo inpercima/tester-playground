@@ -2,7 +2,7 @@ import { OverlayContainer } from '@angular/cdk/overlay';
 import { Component, HostBinding, OnInit } from '@angular/core';
 import { Title } from '@angular/platform-browser';
 
-import { MissionQuery, MissionsQuery } from 'src/graphql/graphql';
+import { LaunchesQuery, MissionQuery, TripsBookedSubscription } from 'src/graphql/graphql';
 
 import { environment } from '../environments/environment';
 import { CodegenService } from './service/codegen.service';
@@ -16,10 +16,13 @@ import { SimpleService } from './service/simple.service';
 export class AppComponent implements OnInit {
 
   public appname: string;
-  missionsSimple: any[] = [];
-  missionsCodegen!: MissionsQuery['missions'];
-  missionSimple: any;
-  missionCodegen!: MissionQuery['mission'];
+
+  launchesSimple: any[] = [];
+  launchesCodegen!: any[];
+  missionSimple: any = '';
+  missionCodegen!: MissionQuery['launch'];
+  tripsBookedSimple: number = 0;
+  tripsBookedCodegen: TripsBookedSubscription['tripsBooked'];
 
   /**
    * Adds the custom theme to the app root.
@@ -39,14 +42,14 @@ export class AppComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    this.simpleService.getMissions().subscribe((missions) => (this.missionsSimple = missions));
-    this.simpleService.getUsers().subscribe((users) => (this.missionsSimple = users));
-    this.codegenService.getMissions().subscribe((missions) => (this.missionsCodegen = missions));
-    this.codegenService.getUsers().subscribe((users) => (this.missionsSimple = users));
+    this.simpleService.getLaunches().subscribe(launches => this.launchesSimple = launches.launches);
+    this.simpleService.getTripsBooked().subscribe(tripsBooked => this.tripsBookedSimple = tripsBooked);
+    this.codegenService.getLaunches().subscribe(launches => this.launchesCodegen = launches.launches);
+    this.codegenService.getTripsBooked().subscribe(tripsBooked => this.tripsBookedCodegen = tripsBooked);
   }
 
   getMission(): void {
-    this.simpleService.getMission('F7709F2').subscribe((mission) => (this.missionSimple = mission));
-    this.codegenService.getMission('F7709F2').subscribe((mission) => (this.missionCodegen = mission));
+    this.simpleService.getMission('93').subscribe(launch => this.missionSimple = launch);
+    this.codegenService.getMission('93').subscribe(launch => this.missionCodegen = launch);
   }
 }

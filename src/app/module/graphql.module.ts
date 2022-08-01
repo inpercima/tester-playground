@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 
 import { InMemoryCache, split } from '@apollo/client/core';
 import { GraphQLWsLink } from '@apollo/client/link/subscriptions';
+import { WebSocketLink } from '@apollo/client/link/ws';
 import { getMainDefinition } from '@apollo/client/utilities';
 import { ApolloModule, APOLLO_OPTIONS } from 'apollo-angular';
 import { HttpLink } from 'apollo-angular/http';
@@ -23,11 +24,8 @@ import { environment } from '../../environments/environment';
           uri: environment.api,
         });
         // websocket link:
-        const ws = new GraphQLWsLink(
-          createClient({
-            url: environment.api.replace('https', 'ws'),
-          }),
-        );
+        const wsUrl = environment.api.replace('https', 'ws');
+        const ws = environment.wsType === 'graphql-ws' ? new GraphQLWsLink(createClient({ url: wsUrl })) : new WebSocketLink({ uri: wsUrl });
 
         // using the ability to split links, you can send data to each link
         // depending on what kind of operation is being sent
