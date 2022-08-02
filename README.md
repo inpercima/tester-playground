@@ -2,7 +2,11 @@
 
 [![MIT license](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md)
 
-Simple angular app working against the public api of angular.schule to learn apollo and graphql.
+Simple angular app working against the graphql `https://apollo-fullstack-tutorial.herokuapp.com/graphql` to check apollo and graphql.
+According to the library, even `graphql-ws` should be supported, but it doesn't seem to be.
+This project shows how query, mutation and subscription work partially with `subscription-transport-ws` and `graphql-ws`.
+In the environment variables you can choose the one or the other one library on startup.
+Check the [configuration](#configuration).
 
 This project was generated with [swaaplate](https://github.com/inpercima/swaaplate) version 2.3.7.
 
@@ -103,7 +107,7 @@ Change for prodMode the option `production` to `true`.
 
 Defines the URL to the backend.
 
-* default: `https://api.angular.schule/graphql/`
+* default: `https://apollo-fullstack-tutorial.herokuapp.com/graphql`
 * type: `string`
 
 ### `appname`
