@@ -3,8 +3,8 @@
 [![MIT license](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md)
 
 Simple angular app working against the graphql `https://apollo-fullstack-tutorial.herokuapp.com/graphql` to check apollo and graphql.
-According to the library, even `graphql-ws` should be supported, but it doesn't seem to be.
 This project shows how query, mutation and subscription work partially with `subscription-transport-ws` and `graphql-ws`.
+The used endpoint seems not fully updated for `graphql-ws` so `subscription-transport-ws` is used as default.
 In the environment variables you can choose the one or the other one library on startup.
 Check the [configuration](#configuration).
 
