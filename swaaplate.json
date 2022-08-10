@@ -34,14 +34,14 @@
     "description": "Simple angular app working against the public api of angular.schule to learn apollo and graphql.",
     "modRewriteIndex": false,
     "name": "test-angular-apollo-graphql",
-    "title": "Test angular apollo graphql",
+    "title": "Test angular apollo nestjs graphql",
     "useDocker": false,
     "useMITLicense": true,
     "useMock": false,
     "useSecurity": false
   },
   "server": {
-    "backend": "js",
+    "backend": "php",
     "javaKt": {
       "management": "",
       "packagePath": ""

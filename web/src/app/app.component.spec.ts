@@ -28,16 +28,16 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have as appname 'Test angular apollo graphql'`, () => {
+  it(`should have as appname 'Test angular apollo nestjs graphql'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.appname).toEqual('Test angular apollo graphql');
+    expect(app.appname).toEqual('Test angular apollo nestjs graphql');
   });
 
   it('should render toolbar', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('mat-toolbar')?.textContent).toContain('Test angular apollo graphql');
+    expect(compiled.querySelector('mat-toolbar')?.textContent).toContain('Test angular apollo nestjs graphql');
   });
 });
