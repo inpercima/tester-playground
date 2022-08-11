@@ -21,8 +21,8 @@
         "name": "Marcel Jänicke",
         "email": "inpercima@gmail.com"
       }],
-      "homepage": "https://github.com/inpercima/test-angular-apollo-graphql/",
-      "repository": "https://github.com/inpercima/test-angular-apollo-graphql/"
+      "homepage": "https://github.com/inpercima/test-angular-apollo-nestjs-graphql/",
+      "repository": "https://github.com/inpercima/test-angular-apollo-nestjs-graphql/"
     },
     "prefix": "aag",
     "theme": "indigo-pink",
@@ -33,7 +33,7 @@
     "author": "Marcel Jänicke",
     "description": "Simple angular app working against the public api of angular.schule to learn apollo and graphql.",
     "modRewriteIndex": false,
-    "name": "test-angular-apollo-graphql",
+    "name": "test-angular-apollo-nestjs-graphql",
     "title": "Test angular apollo nestjs graphql",
     "useDocker": false,
     "useMITLicense": true,

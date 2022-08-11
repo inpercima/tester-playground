@@ -57,11 +57,11 @@
   "engines": {
     "node": ">=16.16.0"
   },
-  "homepage": "https://github.com/inpercima/test-angular-apollo-graphql/",
+  "homepage": "https://github.com/inpercima/test-angular-apollo-nestjs-graphql/",
   "license": "MIT",
-  "name": "test-angular-apollo-graphql",
+  "name": "test-angular-apollo-nestjs-graphql",
   "private": true,
-  "repository": "https://github.com/inpercima/test-angular-apollo-graphql/",
+  "repository": "https://github.com/inpercima/test-angular-apollo-nestjs-graphql/",
   "scripts": {
     "build:dev": "ng lint && ng build --configuration=development",
     "serve:dev": "ng serve -o --configuration=development",

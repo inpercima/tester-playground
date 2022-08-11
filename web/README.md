@@ -1,33 +1,11 @@
-# Test angular apollo nestjs graphql
-
-[![MIT license](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md)
-
-Simple angular app working against the graphql `https://apollo-fullstack-tutorial.herokuapp.com/graphql` to check apollo and graphql.
-This project shows how query, mutation and subscription work partially with `subscription-transport-ws` and `graphql-ws`.
-The used endpoint seems not fully updated for `graphql-ws` so `subscription-transport-ws` is used as default.
-In the environment variables you can choose the one or the other one library on startup.
-Check the [configuration](#configuration).
-
-This project was generated with [swaaplate](https://github.com/inpercima/swaaplate) version 2.3.7.
-
-## Prerequisites
-
-### Angular CLI
-
-* `angular-cli 14.1.0` or higher
-
-### Node, npm or yarn
-
-* `node 16.16.0` or higher in combination with
-  * `npm 8.12.2` or higher or
-  * `yarn 1.22.19` or higher, used in this repository
+# Test angular apollo nestjs graphql - web
 
 ## Getting started
 
 ```bash
 # clone project
-git clone https://github.com/inpercima/test-angular-apollo-graphql/
-cd test-angular-apollo-graphql
+git clone https://github.com/inpercima/test-angular-apollo-nestjs-graphql/
+cd test-angular-apollo-nestjs-graphql
 
 # install tools and frontend dependencies
 yarn
