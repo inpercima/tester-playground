@@ -2,20 +2,11 @@
 {
   "extends": "./tsconfig.json",
   "compilerOptions": {
-    /*
-    * ts-jest[config] (WARN) message TS151001: If you have issues related to imports,
-    * you should consider setting `esModuleInterop` to `true` in your TypeScript configuration file (usually `tsconfig.json`).
-    * See https://blogs.msdn.microsoft.com/typescript/2018/01/31/announcing-typescript-2-7/#easier-ecmascript-module-interoperability for more information.
-    */
-    "esModuleInterop": true,
     "outDir": "./out-tsc/spec",
     "types": [
-      "jest"
+      "jasmine"
     ]
   },
-  "files": [
-    "src/polyfills.ts"
-  ],
   "include": [
     "src/**/*.spec.ts",
     "src/**/*.d.ts"
