@@ -3,3 +3,7 @@ body {
   margin: 0;
   overflow-y: scroll;
 }
+
+mat-card, mat-progress-bar {
+  margin-top: 20px;
+}

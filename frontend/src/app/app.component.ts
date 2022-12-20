@@ -11,7 +11,7 @@ import { SimpleService } from './service/simple.service';
 @Component({
   selector: 'aag-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css'],
+  styleUrls: ['./app.component.css']
 })
 export class AppComponent implements OnInit {
 
@@ -24,20 +24,14 @@ export class AppComponent implements OnInit {
   tripsBookedSimple: number = 0;
   tripsBookedCodegen: TripsBookedSubscription['tripsBooked'];
 
-  /**
-   * Adds the custom theme to the app root.
-   * For overlays the OverlayContainer like in the constructor is used.
-   * For dialogs the panelClass of the configuration must added manually like
-   *
-   * const dialogConfig = new MatDialogConfig();
-   * dialogConfig.panelClass = `${environment.theme}-theme`;
-   */
+  // Adds the custom theme to the app root.
   @HostBinding('class') class = `${environment.theme}-theme`;
 
   public constructor(private titleService: Title, public overlayContainer: OverlayContainer,
     private codegenService: CodegenService, private simpleService: SimpleService) {
     this.appname = environment.appname;
     this.titleService.setTitle(this.appname);
+    // Adds the custom theme to dialogs.
     this.overlayContainer.getContainerElement().classList.add(`${environment.theme}-theme`);
   }
 

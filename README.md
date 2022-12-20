@@ -4,18 +4,18 @@
 
 Simple angular app working against the public api of `https://apollo-fullstack-tutorial.herokuapp.com/graphql` to learn apollo and graphql.
 
-This project was generated with [swaaplate](https://github.com/inpercima/swaaplate) version 2.3.7.
+This project was generated with [swaaplate](https://github.com/inpercima/swaaplate) version 2.5.0.
 
 ## Prerequisites
 
 ### Angular CLI
 
-* `@angular/cli 14.1.0` or higher
+* `@angular/cli 15.0.3` or higher
 
 ### Node, npm or yarn
 
-* `node 16.16.0` or higher in combination with
-  * `npm 8.12.2` or higher or
+* `node 18.10.0` or higher in combination with
+  * `npm 8.19.2` or higher or
   * `yarn 1.22.19` or higher, used in this repository
 
 ## Getting started
@@ -30,6 +30,6 @@ cd test-angular-apollo-nestjs-graphql
 
 ### Modules
 
-For the client check [test-angular-apollo-nestjs-graphql - web](./web).
+For the frontend check [test-angular-apollo-nestjs-graphql - frontend](./frontend).
 
-For the server check [test-angular-apollo-nestjs-graphql - server](./server).
+For the backend check [test-angular-apollo-nestjs-graphql - backend](./backend).
