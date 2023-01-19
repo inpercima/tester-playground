@@ -1,5 +1,5 @@
 /**
- * The file setup-jest.js and the configuration 'setupFilesAfterEnv' here are not need if the jest builder form
+ * The file setup-jest.js and the configuration 'setupFilesAfterEnv' here are not need if the jest builder from
  * https://github.com/just-jeb/angular-builders is used.
  */
 module.exports = {
