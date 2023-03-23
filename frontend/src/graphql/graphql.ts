@@ -183,7 +183,7 @@ export const MissionDocument = gql`
     }
   }
 export const TripsBookedDocument = gql`
-    subscription tripsBooked {
+    subscription TripsBooked {
   tripsBooked
 }
     `;
