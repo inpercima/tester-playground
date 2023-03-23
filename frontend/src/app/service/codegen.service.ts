@@ -12,11 +12,11 @@ export class CodegenService {
   constructor(private launchesGQL: LaunchesGQL, private missionGQL: MissionGQL, private tripsBookedGQL: TripsBookedGQL) {}
 
   getLaunches(): Observable<LaunchesQuery['launches']> {
-    return this.launchesGQL.watch().valueChanges.pipe(map((result) => result.data.launches));
+    return this.launchesGQL.fetch().pipe(map((result) => result.data.launches));
   }
 
   getMission(launchId: string): Observable<MissionQuery['launch']> {
-    return this.missionGQL.watch({ launchId }).valueChanges.pipe(map((result) => result.data.launch));
+    return this.missionGQL.fetch({ launchId }).pipe(map((result) => result.data.launch));
   }
 
   getTripsBooked(): Observable<TripsBookedSubscription['tripsBooked']> {
