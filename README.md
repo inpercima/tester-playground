@@ -4,7 +4,7 @@
 
 Simple angular app working against the public api of `https://apollo-fullstack-tutorial.herokuapp.com/graphql` to learn apollo and graphql.
 
-This project was generated with [swaaplate](https://github.com/inpercima/swaaplate) version 2.5.0.
+This project was generated with [swaaplate](https://github.com/inpercima/swaaplate) version 2.5.2.
 
 ## Prerequisites
 
@@ -14,7 +14,7 @@ This project was generated with [swaaplate](https://github.com/inpercima/swaapla
 
 ### Nestjs CLI
 
-* `nestjs-cli 9.3.0` or higher
+* `@nestjs/cli 9.3.0` or higher
 
 ### Node, npm or yarn
 

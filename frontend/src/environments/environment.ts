@@ -4,5 +4,4 @@ export const environment = {
   defaultRoute: 'dashboard',
   production: false,
   theme: 'indigo-pink',
-  wsType: 'subscriptions-transport-ws'
 };

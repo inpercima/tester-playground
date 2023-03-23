@@ -22,11 +22,10 @@
     "graphql-ws": "5.12.0",
     "material-icons": "1.13.3",
     "rxjs": "7.8.0",
-    "subscriptions-transport-ws": "0.11.0",
     "tslib": "2.5.0",
     "zone.js": "0.13.0"
   },
-  "description": "Simple angular app working against the public api of angular.schule to learn apollo and graphql.",
+  "description": "Simple angular app working against the public api of `https://apollo-fullstack-tutorial.herokuapp.com/graphql` to learn apollo and graphql.",
   "devDependencies": {
     "@angular-devkit/build-angular": "15.2.4",
     "@angular-eslint/builder": "15.2.1",
@@ -67,7 +66,7 @@
     "serve:dev": "ng serve -o --configuration=development",
     "watch:dev": "ng build --watch --configuration=development",
     "build:prod": "ng lint && ng build",
-    "gql": "graphql-codegen --config src/graphql/codegen.yml"
+    "gql": "graphql-codegen --config src/graphql/codegen.ts"
   },
   "version": "1.0.0-SNAPSHOT"
 }

@@ -42,7 +42,7 @@
   },
   "general": {
     "author": "Marcel Jänicke",
-    "description": "Simple angular app working against the public api of angular.schule to learn apollo and graphql.",
+    "description": "Simple angular app working against the public api of `https://apollo-fullstack-tutorial.herokuapp.com/graphql` to learn apollo and graphql.",
     "modRewriteIndex": false,
     "name": "test-angular-apollo-nestjs-graphql",
     "title": "Test angular apollo nestjs graphql",

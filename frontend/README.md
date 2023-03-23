@@ -78,7 +78,6 @@ Change for `production mode` the option `production` to `true`.
 * [defaultRoute](#defaultroute)
 * [production](#production)
 * [theme](#theme)
-* [wsType](#wstype)
 
 ### `api`
 
@@ -118,11 +117,3 @@ Name of a build-in theme from angular-material or a custom light or dark theme.
 * values: `deeppurple-amber`/`indigo-pink`/`pink-bluegrey`/`purple-green`/`custom-light`/`custom-dark`
 
 To create a custom light or dark theme just edit the colors and themes in `themes.scss`.
-
-### `wsType`
-
-Name of the library to use for Websocket.
-
-* default: `subscriptions-transport-ws`
-* type: `string`
-* values: `subscriptions-transport-ws`/`graphql-ws`
