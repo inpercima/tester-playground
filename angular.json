@@ -34,7 +34,11 @@
               "src/styles.css",
               "src/themes.scss"
             ],
-            "scripts": []
+            "scripts": [],
+            "allowedCommonJsDependencies": [
+              "mqtt-browser",
+              "xtend"
+            ]
           },
           "configurations": {
             "production": {
