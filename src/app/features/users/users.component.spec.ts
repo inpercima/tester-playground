@@ -10,17 +10,11 @@ describe('UsersComponent', () => {
   let fixture: ComponentFixture<UsersComponent>;
   let service: UsersService;
 
-  beforeEach(async () => {
-    await TestBed.configureTestingModule({
-      declarations: [
-        UsersComponent,
-      ],
-      imports: [
-        MaterialModule,
-        HttpClientTestingModule,
-      ],
-    })
-    .compileComponents();
+  beforeEach(() => {
+    TestBed.configureTestingModule({
+      declarations: [UsersComponent],
+      imports: [MaterialModule, HttpClientTestingModule],
+    });
 
     fixture = TestBed.createComponent(UsersComponent);
     component = fixture.componentInstance;
