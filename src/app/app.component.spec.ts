@@ -7,19 +7,12 @@ import { AppComponent } from './app.component';
 import { AppRoutingPipe } from './app-routing.pipe';
 
 describe('AppComponent', () => {
-  beforeEach(async () => {
-    await TestBed.configureTestingModule({
-      imports: [
-        MatTabsModule,
-        MatToolbarModule,
-        RouterTestingModule
-      ],
-      declarations: [
-        AppComponent,
-        AppRoutingPipe
-      ],
-    }).compileComponents();
-  });
+  beforeEach(() =>
+    TestBed.configureTestingModule({
+      imports: [MatTabsModule, MatToolbarModule, RouterTestingModule],
+      declarations: [AppComponent, AppRoutingPipe],
+    })
+  );
 
   it('should create the app', () => {
     const fixture = TestBed.createComponent(AppComponent);
