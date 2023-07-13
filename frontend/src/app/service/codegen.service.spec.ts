@@ -6,14 +6,10 @@ import { CodegenService } from './codegen.service';
 describe('CodegenService', () => {
   let service: CodegenService;
 
-  beforeEach(async () => {
-    await TestBed.configureTestingModule({
-      imports: [
-        ApolloModule
-      ],
-      providers: [
-        Apollo
-      ],
+  beforeEach(() => {
+    TestBed.configureTestingModule({
+      imports: [ApolloModule],
+      providers: [Apollo],
     }).compileComponents();
     service = TestBed.inject(CodegenService);
   });

@@ -6,14 +6,10 @@ import { SimpleService } from './simple.service';
 describe('SimpleService', () => {
   let service: SimpleService;
 
-  beforeEach(async () => {
-    await TestBed.configureTestingModule({
-      imports: [
-        ApolloModule
-      ],
-      providers: [
-        Apollo
-      ]
+  beforeEach(() => {
+    TestBed.configureTestingModule({
+      imports: [ApolloModule],
+      providers: [Apollo],
     }).compileComponents();
     service = TestBed.inject(SimpleService);
   });

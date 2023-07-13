@@ -8,17 +8,10 @@ import { AppComponent } from './app.component';
 import { GraphQLModule } from './module/graphql.module';
 
 describe('AppComponent', () => {
-  beforeEach(async () => {
-    await TestBed.configureTestingModule({
-      imports: [
-        ApolloModule,
-        HttpClientModule,
-        MatToolbarModule,
-        GraphQLModule,
-      ],
-      declarations: [
-        AppComponent,
-      ],
+  beforeEach(() => {
+    TestBed.configureTestingModule({
+      imports: [ApolloModule, HttpClientModule, MatToolbarModule, GraphQLModule],
+      declarations: [AppComponent],
     }).compileComponents();
   });
 
