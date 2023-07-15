@@ -4,13 +4,13 @@
 
 Demo angular app using jest and cypress.
 
-This project was generated with [swaaplate](https://github.com/inpercima/swaaplate) version 2.5.0.
+This project was generated with [swaaplate](https://github.com/inpercima/swaaplate) version 2.5.3.
 
 ## Prerequisites
 
 ### Angular CLI
 
-* `@angular/cli 16.0.1` or higher
+* `@angular/cli 16.1.4` or higher
 
 ### Node, npm or yarn
 
