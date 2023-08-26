@@ -14,7 +14,7 @@ This project was generated with [swaaplate](https://github.com/inpercima/swaapla
 
 ### Nestjs CLI
 
-* `@nestjs/cli 10.1.8` or higher
+* `@nestjs/cli 10.1.16` or higher
 
 ### Node, npm or yarn
 
