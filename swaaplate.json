@@ -29,7 +29,7 @@
     },
     "packageJson": {
       "contributors": [{
-        "name": "Marcel Jänicke",
+        "name": "Marcel Hendrich",
         "email": "inpercima@gmail.com"
       }],
       "homepage": "https://github.com/inpercima/test-angular-apollo-nestjs-graphql/",
@@ -41,7 +41,7 @@
     "useYarn": true
   },
   "general": {
-    "author": "Marcel Jänicke",
+    "author": "Marcel Hendrich",
     "description": "Simple angular app working against the public api of `https://apollo-fullstack-tutorial.herokuapp.com/graphql` to learn apollo and graphql.",
     "modRewriteIndex": false,
     "name": "test-angular-apollo-nestjs-graphql",
