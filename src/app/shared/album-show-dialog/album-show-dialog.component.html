@@ -1,0 +1,18 @@
+<h1 mat-dialog-title>Albums of user</h1>
+<div mat-dialog-content *ngIf="albums">
+  <mat-accordion>
+    <mat-expansion-panel *ngFor="let album of albums" (expandedChange)="expand(album.id)">
+      <mat-expansion-panel-header>
+        <mat-panel-title>
+          {{ album.title }}
+        </mat-panel-title>
+      </mat-expansion-panel-header>
+      <div *ngIf="photos">
+        <img *ngFor="let photo of photos" src="{{ photo.thumbnailUrl }}" />
+      </div>
+    </mat-expansion-panel>
+  </mat-accordion>
+</div>
+<div mat-dialog-actions>
+  <button mat-button mat-dialog-close>Close</button>
+</div>

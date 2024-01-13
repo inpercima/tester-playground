@@ -1,0 +1,71 @@
+<div fxLayout="row" fxLayoutAlign="center">
+  <mat-card fxFlex="80">
+    <mat-card-content>
+      <mat-table [dataSource]="dataSource" class="mat-elevation-z8" *ngIf="dataSource">
+        <!-- Id Column -->
+        <ng-container matColumnDef="id">
+          <mat-header-cell *matHeaderCellDef>Id</mat-header-cell>
+          <mat-cell *matCellDef="let element">{{ element.id }}</mat-cell>
+        </ng-container>
+
+        <!-- Name Column -->
+        <ng-container matColumnDef="name">
+          <mat-header-cell *matHeaderCellDef>Name</mat-header-cell>
+          <mat-cell *matCellDef="let element">{{ element.name }}</mat-cell>
+        </ng-container>
+
+        <!-- Username Column -->
+        <ng-container matColumnDef="username">
+          <mat-header-cell *matHeaderCellDef>Username</mat-header-cell>
+          <mat-cell *matCellDef="let element">{{ element.username }}</mat-cell>
+        </ng-container>
+
+        <!-- Email Column -->
+        <ng-container matColumnDef="email">
+          <mat-header-cell *matHeaderCellDef fxHide.lt-sm="true">Email</mat-header-cell>
+          <mat-cell *matCellDef="let element" fxHide.lt-sm="true">{{ element.email }}</mat-cell>
+        </ng-container>
+
+        <!-- City Column -->
+        <ng-container matColumnDef="city">
+          <mat-header-cell *matHeaderCellDef>City</mat-header-cell>
+          <mat-cell *matCellDef="let element">{{ element.address.city }}</mat-cell>
+        </ng-container>
+
+        <!-- Zipcode Column -->
+        <ng-container matColumnDef="zipcode">
+          <mat-header-cell *matHeaderCellDef>Zipcode</mat-header-cell>
+          <mat-cell *matCellDef="let element">{{ element.address.zipcode }}</mat-cell>
+        </ng-container>
+
+        <!-- Street Column -->
+        <ng-container matColumnDef="street">
+          <mat-header-cell *matHeaderCellDef>Street</mat-header-cell>
+          <mat-cell *matCellDef="let element">{{ element.address.street }}</mat-cell>
+        </ng-container>
+
+        <!-- Suite Column -->
+        <ng-container matColumnDef="suite">
+          <mat-header-cell *matHeaderCellDef>Suite</mat-header-cell>
+          <mat-cell *matCellDef="let element">{{ element.address.suite }}</mat-cell>
+        </ng-container>
+
+        <!-- Functions Column -->
+        <ng-container matColumnDef="functions">
+          <mat-header-cell *matHeaderCellDef>Functions</mat-header-cell>
+          <mat-cell *matCellDef="let element">
+            <button mat-icon-button matTooltip="Show users albums and photos" (click)="showAlbums(element.id)">
+              <mat-icon>preview</mat-icon>
+            </button>
+            <button mat-icon-button matTooltip="Add new album" (click)="createAlbum(element.id)">
+              <mat-icon>add</mat-icon>
+            </button>
+          </mat-cell>
+        </ng-container>
+
+        <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
+        <mat-row *matRowDef="let row; columns: displayedColumns;"></mat-row>
+      </mat-table>
+    </mat-card-content>
+  </mat-card>
+</div>

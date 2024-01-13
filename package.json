@@ -1,0 +1,62 @@
+{
+  "author": "Marcel Hendrich",
+  "contributors": [
+    {
+      "name": "Marcel Hendrich",
+      "email": "inpercima@gmail.com"
+    }
+  ],
+  "dependencies": {
+    "@angular/animations": "16.2.2",
+    "@angular/cdk": "16.2.1",
+    "@angular/common": "16.2.2",
+    "@angular/compiler": "16.2.2",
+    "@angular/core": "16.2.2",
+    "@angular/forms": "16.2.2",
+    "@angular/material": "16.2.1",
+    "@angular/platform-browser": "16.2.2",
+    "@angular/platform-browser-dynamic": "16.2.2",
+    "material-icons": "1.13.10",
+    "rxjs": "7.8.1",
+    "tslib": "2.6.2",
+    "zone.js": "0.13.1"
+  },
+  "description": "Demo angular app using jest and cypress.",
+  "devDependencies": {
+    "@angular-builders/jest": "16.0.1",
+    "@angular-devkit/build-angular": "16.2.0",
+    "@angular-eslint/builder": "16.1.1",
+    "@angular-eslint/eslint-plugin": "16.1.1",
+    "@angular-eslint/eslint-plugin-template": "16.1.1",
+    "@angular-eslint/schematics": "16.1.1",
+    "@angular-eslint/template-parser": "16.1.1",
+    "@angular/cli": "16.2.0",
+    "@angular/compiler-cli": "16.2.2",
+    "@cypress/schematic": "2.5.0",
+    "@types/jest": "29.5.4",
+    "@typescript-eslint/eslint-plugin": "6.4.1",
+    "@typescript-eslint/parser": "6.4.1",
+    "autoprefixer": "10.4.15",
+    "cypress": "12.17.4",
+    "eslint": "8.48.0",
+    "jest": "29.6.4",
+    "postcss": "8.4.28",
+    "tailwindcss": "3.3.3",
+    "typescript": "5.1.6"
+  },
+  "engines": {
+    "node": ">=18.16.0"
+  },
+  "homepage": "https://github.com/inpercima/test-angular-jest-cypress",
+  "license": "MIT",
+  "name": "test-angular-jest-cypress",
+  "private": true,
+  "repository": "https://github.com/inpercima/test-angular-jest-cypress",
+  "scripts": {
+    "build:dev": "ng lint && ng build --configuration=development",
+    "serve:dev": "ng serve -o --configuration=development",
+    "watch:dev": "ng build --watch --configuration=development",
+    "build:prod": "ng lint && ng build"
+  },
+  "version": "1.0.0-SNAPSHOT"
+}

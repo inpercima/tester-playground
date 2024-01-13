@@ -1,0 +1,54 @@
+{
+  "backend": {
+    "language": "none",
+    "javaKt": {
+      "management": "",
+      "packagePath": ""
+    },
+    "php": {
+      "modRewritePhpExtension": false,
+      "runAsApi": false
+    }
+  },
+  "frontend": {
+    "buildDir": "dist",
+    "ghUser": "inpercima",
+    "installDependencies": true,
+    "language": "en",
+    "modules": {
+      "enabled": true,
+      "features": {
+        "defaultRoute": "users",
+        "name": "features"
+      },
+      "notFound": {
+        "enabled": false,
+        "name": ""
+      },
+      "routing": false
+    },
+    "packageJson": {
+      "contributors": [{
+        "name": "Marcel Hendrich",
+        "email": "inpercima@gmail.com"
+      }],
+      "homepage": "https://github.com/inpercima/test-angular-jest-cypress",
+      "repository": "https://github.com/inpercima/test-angular-jest-cypress"
+    },
+    "prefix": "tajc",
+    "theme": "indigo-pink",
+    "useGoogleFonts": true,
+    "useYarn": true
+  },
+  "general": {
+    "author": "Marcel Hendrich",
+    "description": "Demo angular app using jest and cypress.",
+    "modRewriteIndex": false,
+    "name": "test-angular-jest-cypress",
+    "title": "Test angular jest cypress",
+    "useDocker": false,
+    "useMITLicense": true,
+    "useMock": false,
+    "useSecurity": false
+  }
+}
