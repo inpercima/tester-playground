@@ -1,0 +1,54 @@
+{
+  "backend": {
+    "language": "none",
+    "javaKt": {
+      "management": "",
+      "packagePath": ""
+    },
+    "php": {
+      "modRewritePhpExtension": false,
+      "runAsApi": false
+    }
+  },
+  "frontend": {
+    "buildDir": "dist",
+    "ghUser": "inpercima",
+    "installDependencies": true,
+    "language": "en",
+    "modules": {
+      "enabled": true,
+      "features": {
+        "defaultRoute": "dashboard",
+        "name": "features"
+      },
+      "notFound": {
+        "enabled": false,
+        "name": ""
+      },
+      "routing": true
+    },
+    "packageJson": {
+      "contributors": [{
+        "name": "Marcel Jänicke",
+        "email": "inpercima@gmail.com"
+      }],
+      "homepage": "https://github.com/inpercima/test-angular-mqtt/",
+      "repository": "https://github.com/inpercima/test-angular-mqtt/"
+    },
+    "prefix": "amqtt",
+    "theme": "indigo-pink",
+    "useGoogleFonts": true,
+    "useYarn": true
+  },
+  "general": {
+    "author": "Marcel Jänicke",
+    "description": "Demo app using angular and mqtt together.",
+    "modRewriteIndex": false,
+    "name": "test-angular-mqtt",
+    "title": "Angular mqtt",
+    "useDocker": false,
+    "useMITLicense": true,
+    "useMock": false,
+    "useSecurity": false
+  }
+}
