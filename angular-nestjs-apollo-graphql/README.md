@@ -10,16 +10,16 @@ This project was generated with [swaaplate](https://github.com/inpercima/swaapla
 
 ### Angular CLI
 
-* `@angular/cli 16.2.0` or higher
+* `@angular/cli 17.3.0` or higher
 
 ### Nestjs CLI
 
-* `@nestjs/cli 10.1.16` or higher
+* `@nestjs/cli 10.3.2` or higher
 
 ### Node, npm or yarn
 
 * `node 18.16.0` or higher in combination with
-  * `npm 9.5.1` or higher or
+  * `npm 10.1.0` or higher or
   * `yarn 1.22.19` or higher, used in this repository
 
 ## Getting started
