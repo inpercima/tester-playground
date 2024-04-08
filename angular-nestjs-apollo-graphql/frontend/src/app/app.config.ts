@@ -1,8 +1,8 @@
-import { ApplicationConfig, importProvidersFrom } from '@angular/core';
+import { ApplicationConfig } from '@angular/core';
 
 import { provideHttpClient } from '@angular/common/http';
-import { GraphQLModule } from './module/graphql.module';
+import { graphqlProvider } from './graphql.provider';
 
 export const appConfig: ApplicationConfig = {
-  providers: [provideHttpClient(), importProvidersFrom(GraphQLModule)],
+  providers: [provideHttpClient(), graphqlProvider],
 };

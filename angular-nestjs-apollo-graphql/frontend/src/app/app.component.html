@@ -3,18 +3,20 @@
     {{ appname }}
   </mat-toolbar>
   <h1>Launches list simple</h1>
-  <div *ngIf="launchesSimple">
-    <div *ngFor="let launch of launchesSimple">{{ launch.mission.name }}</div>
-  </div>
-
+  @if(launchesSimple) { @for(launch of launchesSimple; track $index) {
+  <div>{{ launch.mission.name }}</div>
+  } }
   <h1>Launches list codegen</h1>
-  <div *ngIf="launchesCodegen">
-    <div *ngFor="let launch of launchesCodegen">{{ launch.mission?.name }}</div>
-  </div>
+  @if(launchesCodegen) { @for(launch of launchesCodegen; track $index) {
+  <div>{{ launch.mission?.name }}</div>
+  } }
 
   <div>
     <button (click)="getMission()">getMission</button>
-    <div *ngIf="missionSimple">single mission simple: {{ missionSimple.mission.name }}</div>
-    <div *ngIf="missionCodegen">single mission codegen: {{ missionCodegen.mission?.name }}</div>
+    @if(missionSimple) {
+    <div>single mission simple: {{ missionSimple.mission.name }}</div>
+    } @if(missionCodegen) {
+    <div>single mission codegen: {{ missionCodegen.mission?.name }}</div>
+    }
   </div>
 </div>
