@@ -5,7 +5,6 @@
     "packageManager": "yarn",
     "schematicCollections": [
       "@angular-eslint/schematics",
-      "@cypress/schematic",
       "@schematics/angular"
     ]
   },
@@ -125,51 +124,6 @@
               "src/styles.css"
             ],
             "scripts": []
-          }
-        },
-        "cypress-run": {
-          "builder": "@cypress/schematic:cypress",
-          "options": {
-            "devServerTarget": "test-angular-apollo-nestjs-graphql:serve"
-          },
-          "configurations": {
-            "production": {
-              "devServerTarget": "test-angular-apollo-nestjs-graphql:serve:production"
-            }
-          }
-        },
-        "cypress-open": {
-          "builder": "@cypress/schematic:cypress",
-          "options": {
-            "watch": true,
-            "headless": false
-          }
-        },
-        "ct": {
-          "builder": "@cypress/schematic:cypress",
-          "options": {
-            "devServerTarget": "test-angular-apollo-nestjs-graphql:serve",
-            "watch": true,
-            "headless": false,
-            "testingType": "component"
-          },
-          "configurations": {
-            "development": {
-              "devServerTarget": "test-angular-apollo-nestjs-graphql:serve:development"
-            }
-          }
-        },
-        "e2e": {
-          "builder": "@cypress/schematic:cypress",
-          "options": {
-            "devServerTarget": "test-angular-apollo-nestjs-graphql:serve",
-            "watch": true,
-            "headless": false
-          },
-          "configurations": {
-            "production": {
-              "devServerTarget": "test-angular-apollo-nestjs-graphql:serve:production"
-            }
           }
         },
         "lint": {
